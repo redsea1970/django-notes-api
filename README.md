@@ -23,6 +23,38 @@ CRUD-приложение «Заметки» с регистрацией, авт
 4. Запустить: python manage.py runserver
 5. Открыть: http://127.0.0.1:8000/api/notes/
 
+# Django Notes API
+
+REST API для управления заметками на Django + DRF.
+
+## 🚀 Возможности
+- Регистрация пользователей (`/api/register/`).
+- Токен-авторизация.
+- CRUD для заметок (`/api/notes/`).
+- Изоляция данных: каждый пользователь видит только свои заметки.
+
+## 🛠 Технологии
+- Python 3.12, Django, Django REST Framework
+- SQLite
+- Pytest / Django TestCase (4 теста)
+
+## 📦 Установка и запуск
+```bash
+# Клонировать репозиторий
+git clone https://github.com/redsea1970/django-notes-api.git
+
+# Создать и активировать виртуальное окружение
+python -m venv .venv
+source .venv/bin/activate
+
+# Установить зависимости
+pip install -r requirements.txt
+
+# Применить миграции
+python manage.py migrate
+
+# Запустить сервер
+python manage.py runserver
 ## Автор
 redsea1970
 
